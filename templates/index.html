@@ -1,15 +1,18 @@
+{% load static %}
+
 <!doctype html>
 <html>
  <head>
   <title> Hello world </title>
+   <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="keywords" content="">
   <meta name="robots" content="INDEX, FOLLOW">
-  <link href="./style.css" rel="stylesheet" type="text/css" />
+  
  </head>
-<script src="script.js"></script>
+<script src="{% static 'script.js' %}"></script>
   
  <body>
  <div class="background-img"></div>

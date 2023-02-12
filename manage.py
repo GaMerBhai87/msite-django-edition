@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from threading import Thread
 
 def main():
     """Run administrative tasks."""
@@ -17,6 +17,10 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+def keep_alive():
+  t = Thread(target=run)
+  t.start()
 
 if __name__ == '__main__':
     main()
+    keep_alive()
