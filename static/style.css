@@ -17,7 +17,7 @@ html, body {
 /* end */
 body {
   margin: 0;
-  background-image: url("{% static 'back1.jpeg' %}");
+  background-image: url("./back1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
