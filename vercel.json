@@ -23,7 +23,7 @@
 
     "config": {
 
-    "distDir": "staticfiles_build"
+    "distDir": "static"
 
      }
 
