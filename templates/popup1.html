@@ -1,0 +1,29 @@
+{% load statiic %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image upload window</title>
+  <meta charset="UTF-8">
+     
+  </meta>
+  
+</head>
+<body>
+	<div id='header'>
+	   <span id='logo'>Image Uploader</span>
+  </div>
+
+	<div class='form'>
+	   <form method='post' enctype='multipart/form-data'>
+	      {% csrf_token %}
+        {{ profile_form.as_p }}
+        <button type='submit'>Submit</button>
+	   </form>
+	   
+	</div>
+	
+
+
+</body>
+</html>

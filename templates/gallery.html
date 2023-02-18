@@ -6,8 +6,12 @@
 <head>
   
   <link href="{% static 'gallery.css' %}" rel="stylesheet" type="text/css" />
+  <<script src='{% static 'script.js' %}'>
+     
+  </script>
+  
 </head>
-
+  
 <body>
  <div class="container">
   <div class="heading">
@@ -54,13 +58,32 @@
     <img src="{% static '23.jpg' %}">
     <img src="{% static '24.jpg' %}">
       </div>
-    
+   
+    <div class="imgs">
+    <img src="{% static '25.jpg' %}">
+    <img src="{% static '21.jpg' %}">
+    <img src="{% static '23.jpg' %}">
+    <img src="{% static '24.jpg' %}">
+    <img src="{% static '14.jpg' %}">
+    </div>
     
   </div>
-   <div class="btn">
+   <div class="myBtn">
      <a href="#">upload(coming soon)</a>
    </div>
+   <iframe id="myFrame"></iframe>
   </div>
+
+  <div id='header'>
+     <span id='logo'>image uploader</span>
+  </div>
+  {% for profile in profile_img %}
+    <div>
+       <img src='{{ profile.images.url }}' />
+    </div>
+    
+  
+
 <nav>
   <div class = "navbar">
  <ul>
