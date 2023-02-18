@@ -29,7 +29,7 @@ if SECRET_KEY is None:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', *]
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '5597a243-8403-41ea-8669-8c39a070d7cc.id.repl.co']
 X_FRAME_OPTIONS = '*'
 
 # Application definition
